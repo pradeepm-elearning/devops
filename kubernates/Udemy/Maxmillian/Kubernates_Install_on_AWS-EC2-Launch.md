@@ -1,4 +1,5 @@
 ## KUBERNATES INSTALLATION ON AWS DURING EC2 INSTANCE LAUNCH
+
 **This Script to be added inside "User data" field under "Advanced details" section during the AWS EC2 Instance Launch.**
 
 ```
