@@ -72,6 +72,11 @@ tar -xvzf docker-20.10.0.tgz
 5. Copy the binaries to bin directory in /usr
 sudo cp docker/* /usr/bin/
 
+NOTE: If you get the below error
+"Failed to find iptables: exec: "iptables": executable file not found in $PATH"
+then execute the below script.
+yum install iptables -y
+
 6. Start the Docker.
 sudo dockerd &
 
