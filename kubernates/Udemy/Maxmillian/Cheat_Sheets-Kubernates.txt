@@ -34,3 +34,18 @@ kubectl rollout history deployment/DEPLOYMENT_NAME		#checks the Rollback numbers
 kubectl rollout history deployment/DEPLOYMENT_NAME --revision=NUMBER	#view the details of Rollback History
 
 kubectl rollout undo deployment/DEPLOYMENT_NAME --to-revision=NUMBER	#rollback to specific older deployment.
+
+kubectl get all
+
+kubectl get nodes
+
+kubectl get rs 
+
+kubectl delete rs REPLICASET
+
+kubectl describe pods
+
+kubectl describe deployment
+
+kubectl describe rs
+

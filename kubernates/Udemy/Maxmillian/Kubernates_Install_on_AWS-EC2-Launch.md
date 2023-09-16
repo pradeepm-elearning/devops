@@ -22,6 +22,11 @@ cp docker/* /usr/bin/
 yum install iptables -y -q
 dockerd & > /dev/null 2>&1
 
+#INSTALLATION OF DOCKER-COMPOSE
+cd /home/ec2-user
+curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+
 #INSTALLATION OF MINIKUBE
 cd /home/ec2-user
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
