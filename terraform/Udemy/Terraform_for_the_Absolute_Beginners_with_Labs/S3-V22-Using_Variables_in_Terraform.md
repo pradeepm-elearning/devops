@@ -73,12 +73,12 @@ variable "length" {}
 
 4. Environmental Variables
 
-`export TF_VAR_filename = "/home/ciuser/pets.txt"`
-`export TF_VAR_content = "We Love Pets!"`
-`export TF_VAR_prefix = "Mr"`
-`export TF_VAR_separator = "."`
-`export TF_VAR_length = "2"`
-`terraform apply`
+`export TF_VAR_filename = "/home/ciuser/pets.txt"`  
+`export TF_VAR_content = "We Love Pets!"`  
+`export TF_VAR_prefix = "Mr"`  
+`export TF_VAR_separator = "."`  
+`export TF_VAR_length = "2"`  
+`terraform apply`  
 
 5. Variable Definition Files: with below filename, loads automatically.
 
