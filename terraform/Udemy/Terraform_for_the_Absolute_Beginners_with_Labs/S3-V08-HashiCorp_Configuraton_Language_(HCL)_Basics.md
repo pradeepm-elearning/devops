@@ -9,7 +9,7 @@ HCL Syntax
 	key2 = value2
 }
 
-block - Infrastruction Platform and set of resources within that platform which we want to create.
+block - Infrastructure Platform and set of resources within that platform which we want to create.
 
 eg:
 resource "local_file" "pet"
