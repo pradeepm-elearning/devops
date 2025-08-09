@@ -6,7 +6,7 @@ RUN yum install -y -q ncurses fontconfig git openssl
 
 ADD ./jdk-11.0.12_linux-x64_bin.tar.gz /opt/java
 ADD ./jdk-8u60-linux-x64.gz /opt/java
-ADD ./apache-maven-3.8.3-bin.tar.gz /opt/maven
+ADD ./apache-maven-3.8.8-bin.tar.gz /opt/maven
 
 RUN chown -R root:root /opt/java
 
@@ -32,11 +32,11 @@ ENV JENKINS_HOME=/opt/jenkins/jenkins_home
 ENV PATH="$JENKINS_HOME/bin:${PATH}"
 RUN export JENKINS_HOME
 
-ENV MAVEN_HOME=/opt/maven/apache-maven-3.8.3
+ENV MAVEN_HOME=/opt/maven/apache-maven-3.8.8
 ENV PATH="$MAVEN_HOME/bin:${PATH}"
 RUN export MAVEN_HOME
 
-ENV M2_HOME=/opt/maven/apache-maven-3.8.3
+ENV M2_HOME=/opt/maven/apache-maven-3.8.8
 ENV PATH="$M2_HOME/bin:${PATH}"
 RUN export M2_HOME
 
